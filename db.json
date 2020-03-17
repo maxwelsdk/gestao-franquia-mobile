@@ -1,13 +1,387 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "exemlo": {
+    "name": "exemplo"
+  },
+  "auth": [
+{
+    "tipo": "Bearer ",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJKdWxpYW8iLCJzdWIiOiJKdWxpYW8iLCJpYXQiOjE1ODQ0NjE2NjAsImV4cCI6MTU4NDU1MDY2MH0.evRoH0FV2ccDh7KV7sB_Q3B2R81vIhnZSzuuxyQemZ4",
+    "grupo": "CAIXAFRANQUIAS",
+    "codgrupo": 12,
+    "codusu": 418,
+    "foto": "data: image/png;base64,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\nSKFGnBqDzX0AAAAASUVORK5CYII=\n",
+    "codvend": 598,
+    "codemp": 34
+}
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
+  "empresas": [
+    {
+        "razaosocial": "FANNY SCANDIUZZI LOPES CAGLIARI & CIA LT",
+        "cgc": 2147483647,
+        "codemp": 41,
+        "nomefantasia": "PROVANZA UBERABA"
+    },
+    {
+        "razaosocial": "CRUVINEL E DAYRELL LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 43,
+        "nomefantasia": "PROVANZA REDENCAO"
+    },
+    {
+        "razaosocial": "JOAO PEDRO PEIXOTO MACHADO EIRELI ME",
+        "cgc": 2147483647,
+        "codemp": 46,
+        "nomefantasia": "PROVANZA EXTRA UBERLANDIA"
+    },
+    {
+        "razaosocial": "PROVANZA UDIA SHOPPING COM COSM LTDA",
+        "cgc": 2147483647,
+        "codemp": 4,
+        "nomefantasia": "PROVANZA  UBERLANDIA SHOPPING"
+    },
+    {
+        "razaosocial": "Consolidação: 49, 2, 3, 4",
+        "cgc": 0,
+        "codemp": 300,
+        "nomefantasia": "Consolidação: 49, 2, 3, 4"
+    },
+    {
+        "razaosocial": "SAUANDAG COMERCIO DE COMESTICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 40,
+        "nomefantasia": "PROVANZA ANAPOLIS"
+    },
+    {
+        "razaosocial": "PROVANZA AMERICANA COM. COSM. LTDA",
+        "cgc": 2147483647,
+        "codemp": 48,
+        "nomefantasia": "PROVANZA AMERICANA"
+    },
+    {
+        "razaosocial": "HADASSA COSMÉTICOS ROUPAS E ACESSÓRIOS L",
+        "cgc": 2147483647,
+        "codemp": 51,
+        "nomefantasia": "PROVANZA CAMPO GRANDE"
+    },
+    {
+        "razaosocial": "F. C. DE CARVALHO EIRELI",
+        "cgc": 2147483647,
+        "codemp": 52,
+        "nomefantasia": "PROVANZA CUIABA-FÁBIO"
+    },
+    {
+        "razaosocial": "AP GESTAO E PARTICIP EMPRESARIAIS EIRELI",
+        "cgc": 2147483647,
+        "codemp": 55,
+        "nomefantasia": "AP GESTAO E PARTICIP EMPRESARIAIS EIRELI"
+    },
+    {
+        "razaosocial": "PATIO VINHEDOS AROMAS E SABORES EIRELI",
+        "cgc": 2147483647,
+        "codemp": 57,
+        "nomefantasia": "PROVANZA PATIO VINHEDOS"
+    },
+    {
+        "razaosocial": "PROVENCE SANT. DUMONT COM. COSMETIC LTDA",
+        "cgc": 2147483647,
+        "codemp": 1,
+        "nomefantasia": "PROVANZA SANTOS DUMONT"
+    },
+    {
+        "razaosocial": "PROVANZA DVILLE COM DE COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 2,
+        "nomefantasia": "PROVANZA DVILLE"
+    },
+    {
+        "razaosocial": "PROVANZA CENTER SHOPPING COM COSM LTDA",
+        "cgc": 2147483647,
+        "codemp": 3,
+        "nomefantasia": "PROVANZA CENTER SHOPPING"
+    },
+    {
+        "razaosocial": "PROVENCE SANT. DUMONT COM. COSMETIC LTDA",
+        "cgc": 2147483647,
+        "codemp": 100,
+        "nomefantasia": "PROVENCE FRANQUIAS"
+    },
+    {
+        "razaosocial": "AROMAS E COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 5,
+        "nomefantasia": "QUIOESQUE GOIANIA SHOPPING"
+    },
+    {
+        "razaosocial": "AROMAS E COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 6,
+        "nomefantasia": "PROVANZA GOIANIA BOUGANVILE"
+    },
+    {
+        "razaosocial": "PROVANZA AGUAS CLARAS COM DE COSM LTDA",
+        "cgc": 2147483647,
+        "codemp": 7,
+        "nomefantasia": "PROVANZA AGUAS CLARAS-DF"
+    },
+    {
+        "razaosocial": "PROVANZA  AEROPORTO COM. COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 39,
+        "nomefantasia": "PROVANZA AEROPORTO"
+    },
+    {
+        "razaosocial": "VIA OESTE EIRELLI LTDA",
+        "cgc": 2147483647,
+        "codemp": 42,
+        "nomefantasia": "PROVANZA BARREIRAS"
+    },
+    {
+        "razaosocial": "PROVANZA MONTES CLAROS LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 45,
+        "nomefantasia": "PROVANZA MONTES CLAROS"
+    },
+    {
+        "razaosocial": "GIORGIO NILTON COM. PERFUMARIA EIRELI",
+        "cgc": 2147483647,
+        "codemp": 44,
+        "nomefantasia": "PROVANZA RECIFE"
+    },
+    {
+        "razaosocial": "CASA DE CHAS E AROMAS BRAGA LTDA ME",
+        "cgc": 2147483647,
+        "codemp": 47,
+        "nomefantasia": "PROVANZA MONTE CARMELO"
+    },
+    {
+        "razaosocial": "PROVANZA BARRA COM DE COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 49,
+        "nomefantasia": "PROVANZA BARRA COM DE COSMETICOS LTDA"
+    },
+    {
+        "razaosocial": "AROMAS E SABORES ARARAQUARA LTDA",
+        "cgc": 2147483647,
+        "codemp": 50,
+        "nomefantasia": "PROVANZA ARARAQUARA"
+    },
+    {
+        "razaosocial": "BQ AROMAS E SABORES LTDA",
+        "cgc": 2147483647,
+        "codemp": 53,
+        "nomefantasia": "PROVANZA ITUMBIARA - ELISABETE"
+    },
+    {
+        "razaosocial": "PROVANZA TERRAÇO SHOPPING",
+        "cgc": 2147483647,
+        "codemp": 54,
+        "nomefantasia": "PROVANZA TERRAÇO SHOPPING"
+    },
+    {
+        "razaosocial": "PROVANZA COMÉRCIO DE COSMÉTICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 56,
+        "nomefantasia": "PROVANZA"
+    },
+    {
+        "razaosocial": "L&C MAIS COMERCIO DE COSMETICOS E SERVIC",
+        "cgc": 2147483647,
+        "codemp": 58,
+        "nomefantasia": "PROVANZA ASA NORTE - BRASILIA"
+    },
+    {
+        "razaosocial": "Irmaos Jouglard LTDA",
+        "cgc": 2147483647,
+        "codemp": 134,
+        "nomefantasia": "irmao jouglard"
+    },
+    {
+        "razaosocial": "MIRALHA & CARVALHO PERFURARIA LTDAEPP",
+        "cgc": 2147483647,
+        "codemp": 8,
+        "nomefantasia": "PROVANZA BRASILIA PARK SHOPPING"
+    },
+    {
+        "razaosocial": "LOJA MODELO",
+        "cgc": 2147483647,
+        "codemp": 9,
+        "nomefantasia": "PROVENCE AROMOAS E SABORES"
+    },
+    {
+        "razaosocial": "RM AROMAS E SABORES LTDA ME",
+        "cgc": 2147483647,
+        "codemp": 10,
+        "nomefantasia": "PROVANZA CATALAO"
+    },
+    {
+        "razaosocial": "GISA COMERCIO DE PERF. E COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 11,
+        "nomefantasia": "PROVANZA QUIOSQUE TERMINAL CENTRAL"
+    },
+    {
+        "razaosocial": "SILVELLO & SILVELLO COMERC. E COSMETICOS",
+        "cgc": 2147483647,
+        "codemp": 12,
+        "nomefantasia": "PROVANZA AMERICANA"
+    },
+    {
+        "razaosocial": "ORIGEM COMERCIO PRODUTOS BELEZA LTDA",
+        "cgc": 2147483647,
+        "codemp": 13,
+        "nomefantasia": "PROVANZA SAVASSI"
+    },
+    {
+        "razaosocial": "ELA & CEI - PERFUMARIA E COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 14,
+        "nomefantasia": "PROVANZA MOGI GUACU"
+    },
+    {
+        "razaosocial": "PLT COSMETICOS LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 15,
+        "nomefantasia": "PROVANZA LUIS EDUARDO MAGALHAES"
+    },
+    {
+        "razaosocial": "AROMAS E COSMETICOS LTDA-ME",
+        "cgc": 2147483647,
+        "codemp": 16,
+        "nomefantasia": "SHOPPING PASSEIO DAS AGUAS"
+    },
+    {
+        "razaosocial": "AROMAS E SABORES COSMETICOS LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 17,
+        "nomefantasia": "PROVANZA PATOS DE MINAS"
+    },
+    {
+        "razaosocial": "QUINT NOV COMEC D COS E C D CHAS LTDA ME",
+        "cgc": 2147483647,
+        "codemp": 18,
+        "nomefantasia": "PROVANZA CUIABA"
+    },
+    {
+        "razaosocial": "JA MARTINS COMERCIO EIRELI - ME",
+        "cgc": 2147483647,
+        "codemp": 19,
+        "nomefantasia": "PROVANZA GALERIA YAZO"
+    },
+    {
+        "razaosocial": "5 SENTIDOS COM. DE AROMAS E SABORES LTDA",
+        "cgc": 2147483647,
+        "codemp": 20,
+        "nomefantasia": "PROVANZA RIO DE JANEIRO"
+    },
+    {
+        "razaosocial": "5 SENTIDOS COMERCIO DE AROMAS E SABORES",
+        "cgc": 2147483647,
+        "codemp": 21,
+        "nomefantasia": "RIO DE JANEIRO FILIAL"
+    },
+    {
+        "razaosocial": "SWEET CARE AROMAS E SABORES LTDA-ME",
+        "cgc": 2147483647,
+        "codemp": 22,
+        "nomefantasia": "PROVANZA PALMAS"
+    },
+    {
+        "razaosocial": "MR COMERC VAR DE ART DO VEST E COSM.",
+        "cgc": 2147483647,
+        "codemp": 23,
+        "nomefantasia": "PROVANZA JUIZ DE FORA"
+    },
+    {
+        "razaosocial": "ANNYE AROMAS E SABORES LTDA",
+        "cgc": 2147483647,
+        "codemp": 24,
+        "nomefantasia": "PROVANZA CALDAS NOVAS"
+    },
+    {
+        "razaosocial": "ROSEMEIRI ROCCA RAVENA BENEDETTI - ME",
+        "cgc": 2147483647,
+        "codemp": 25,
+        "nomefantasia": "PROVANZA FRUTAL"
+    },
+    {
+        "razaosocial": "POSSER & POSSER LTDA. - ME",
+        "cgc": 2147483647,
+        "codemp": 26,
+        "nomefantasia": "PROVANZA PRIMAVERA DO LESTE"
+    },
+    {
+        "razaosocial": "KARLA ROBERTA G. ALMEIDA MAIA EIRELI ME",
+        "cgc": 2147483647,
+        "codemp": 27,
+        "nomefantasia": "PROVANZA RIO VERDE"
+    },
+    {
+        "razaosocial": "SPP ARICANDUVA COMERCIO DE COSMETICOS EI",
+        "cgc": 2147483647,
+        "codemp": 28,
+        "nomefantasia": "PROVANZA ARICANDUVA"
+    },
+    {
+        "razaosocial": "BQ AROMAS E SABORES LTDA",
+        "cgc": 2147483647,
+        "codemp": 29,
+        "nomefantasia": "PROVANZA ITUMBIARA"
+    },
+    {
+        "razaosocial": "OLIVEIRA & LEITE COMERCIO LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 30,
+        "nomefantasia": "PROVANZA ARAGUARI"
+    },
+    {
+        "razaosocial": "HMR COMERCIO LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 31,
+        "nomefantasia": "PROVANZA COROMANDEL"
+    },
+    {
+        "razaosocial": "SPP IBIRAPUERA COMERC DE COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 32,
+        "nomefantasia": "PROVANZA IBIRAPUERA"
+    },
+    {
+        "razaosocial": "SEGREDO DOS AROMAS COSM E CHAS LTDA",
+        "cgc": 2147483647,
+        "codemp": 33,
+        "nomefantasia": "PROVANZA UBERABA DESATIVADA"
+    },
+    {
+        "razaosocial": "S.M COMERCIO DE COSMETICOS LTDA - ME",
+        "cgc": 2147483647,
+        "codemp": 34,
+        "nomefantasia": "PROVANZA RONDONOPOLIS"
+    },
+    {
+        "razaosocial": "LUCELIA SANTOS FRANCO - ME",
+        "cgc": 2147483647,
+        "codemp": 35,
+        "nomefantasia": "PROVANZA ITUIUTABA"
+    },
+    {
+        "razaosocial": "VIVAS & BARC COMERC DE PERFUMARIA LTDA",
+        "cgc": 2147483647,
+        "codemp": 36,
+        "nomefantasia": "PROVANZA VIA CENTRO"
+    },
+    {
+        "razaosocial": "PROVANZA  AEROPORTO COM. COSMETICOS LTDA",
+        "cgc": 2147483647,
+        "codemp": 37,
+        "nomefantasia": "PROVANZA AEROPORTO"
+    },
+    {
+        "razaosocial": "QUINTELA NOVAES COM DE COS E CHAS",
+        "cgc": 2147483647,
+        "codemp": 38,
+        "nomefantasia": "PROVANZA CUIABA FILIAL"
+    }
+],
   "profile": {
     "name": "typicode"
   }
