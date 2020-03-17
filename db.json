@@ -1,7 +1,4 @@
 {
-  "exemlo": {
-    "name": "exemplo"
-  },
   "auth":
 {
     "tipo": "Bearer ",
@@ -49,7 +46,7 @@
         "cgc": 2147483647,
         "codemp": 3,
         "nomefantasia": "PROVANZA CENTER SHOPPING"
-    },
+    }
   ],
   "profile": {
     "name": "typicode"
